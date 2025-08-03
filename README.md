@@ -40,6 +40,191 @@ First switch S1 is opened, and then switch S2 is thrown to pole b, as shown belo
 
 ---
 
+Let's solve **Problem 1** step by step.
+
+---
+
+### **Circuit Description (Initial Configuration):**
+
+* **Battery voltage**: $\Delta V_B = 24\, \text{V}$
+
+* **Capacitor values**:
+  $C_1 = 6.0\, \mu\text{F}$,
+  $C_2 = 2.0\, \mu\text{F}$,
+  $C_3 = 4.0\, \mu\text{F}$
+
+* **Connection**:
+
+  * $C_2$ and $C_3$ are in **parallel**:
+    → Combine into $C_{23} = C_2 + C_3 = 2.0 + 4.0 = 6.0\, \mu\text{F}$
+  * $C_1$ and $C_{23}$ are in **series**:
+    → Effective capacitance:
+
+    $$
+    \frac{1}{C_{\text{eq}}} = \frac{1}{C_1} + \frac{1}{C_{23}} = \frac{1}{6.0} + \frac{1}{6.0} = \frac{2}{6.0} \Rightarrow C_{\text{eq}} = 3.0\, \mu\text{F}
+    $$
+
+---
+
+### **(a) Find the charge on each capacitor:**
+
+In series, **charge is the same** on all capacitors:
+
+$$
+Q = C_{\text{eq}} \cdot V = 3.0\, \mu\text{F} \cdot 24\,\text{V} = \boxed{72\, \mu\text{C}}
+$$
+
+* So, charge on:
+
+  * $C_1$: $Q_1 = 72\, \mu\text{C}$
+  * $C_{23}$: $Q_{23} = 72\, \mu\text{C}$
+
+Now split the charge across $C_2$ and $C_3$ (in parallel):
+
+* In parallel, **voltage is the same**.
+* Voltage across $C_{23}$:
+
+  $$
+  V_{23} = \frac{Q_{23}}{C_{23}} = \frac{72}{6.0} = 12\,\text{V}
+  $$
+
+Then:
+
+* $Q_2 = C_2 \cdot V_{23} = 2.0 \cdot 12 = \boxed{24\, \mu\text{C}}$
+* $Q_3 = C_3 \cdot V_{23} = 4.0 \cdot 12 = \boxed{48\, \mu\text{C}}$
+
+✅ Final answer for (a):
+
+* $Q_1 = \boxed{72\, \mu\text{C}}$
+* $Q_2 = \boxed{24\, \mu\text{C}}$
+* $Q_3 = \boxed{48\, \mu\text{C}}$
+
+---
+
+### **(b) Battery work and stored potential energy**
+
+#### 🔹 Work done by the battery:
+
+$$
+W = Q_{\text{total}} \cdot \Delta V = 72\, \mu\text{C} \cdot 24\,\text{V} = \boxed{1.728\, \text{mJ}}
+$$
+
+#### 🔹 Total energy stored in capacitors:
+
+$$
+U = \frac{1}{2} C_{\text{eq}} V^2 = \frac{1}{2} \cdot 3.0\, \mu\text{F} \cdot (24)^2 = \frac{1}{2} \cdot 3.0 \cdot 576 = 864\, \mu\text{J} = \boxed{0.864\, \text{mJ}}
+$$
+
+✅ Final answer for (b):
+
+* **Work done by battery**: $\boxed{1.728\, \text{mJ}}$
+* **Energy stored in capacitors**: $\boxed{0.864\, \text{mJ}}$
+
+(Note: The other 0.864 mJ is lost as heat during redistribution of charge.)
+
+---
+
+Let’s now solve **(c)** and **(d)** of **Problem 1**, using the new configuration:
+
+---
+
+### ✅ After switches are changed:
+
+* **S1 is open** (battery disconnected)
+* **S2 is thrown to pole b**
+* The three capacitors **C1 = 6.0 µF**, **C2 = 2.0 µF**, and **C3 = 4.0 µF** are now connected in **series**, isolated from the battery.
+* **Total charge remains conserved** because no external source/sink is connected.
+* **Initial total charge** (from part a):
+  Total charge stored in the system was on C1:
+
+  $$
+  Q_{\text{initial}} = 72\, \mu\text{C}
+  $$
+
+---
+
+### ⚠️ Key idea:
+
+In series, all capacitors carry **equal charge**, so:
+
+$$
+Q_1 = Q_2 = Q_3 = Q
+$$
+
+Let’s find **equilibrium charge** $Q$ using **conservation of charge** and energy.
+
+---
+
+### Step 1: Find equivalent capacitance of series connection
+
+$$
+\frac{1}{C_{\text{eq}}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3}
+= \frac{1}{6} + \frac{1}{2} + \frac{1}{4}
+= \frac{2 + 6 + 3}{12} = \frac{11}{12}
+\Rightarrow C_{\text{eq}} = \frac{12}{11}\, \mu\text{F}
+$$
+
+---
+
+### Step 2: Total energy available (conserved from part b):
+
+From part (b), the energy stored before S1 was opened was:
+
+$$
+U = 0.864\, \text{mJ}
+$$
+
+This energy is **conserved**, so now:
+
+$$
+U = \frac{1}{2} C_{\text{eq}} V_{\text{eq}}^2
+\Rightarrow V_{\text{eq}}^2 = \frac{2U}{C_{\text{eq}}}
+= \frac{2 \cdot 0.864 \times 10^{-3}}{12/11 \times 10^{-6}}
+= \frac{1.728 \times 10^{-3}}{12/11 \times 10^{-6}}
+= \frac{1.728 \cdot 11}{12 \cdot 10^{-6}} = \frac{18.998}{12 \times 10^{-6}} \approx 1.583 \times 10^{6}
+\Rightarrow V_{\text{eq}} \approx \sqrt{1.583 \times 10^6} \approx 125.7\, \text{V}
+$$
+
+---
+
+### Step 3: Find charge using $Q = C_{\text{eq}} \cdot V$
+
+$$
+Q = \frac{12}{11} \cdot 125.7 \approx 137.2\, \mu\text{C}
+$$
+
+✅ Therefore, all capacitors now have the same charge:
+
+$$
+Q_1 = Q_2 = Q_3 = \boxed{137.2\, \mu\text{C}}
+$$
+
+---
+
+### Step 4: (d) How much potential energy is now stored?
+
+This energy **remains the same** as in part (b), since the system is **isolated** (no battery, no current flow in/out):
+
+$$
+U_{\text{final}} = \boxed{0.864\, \text{mJ}}
+$$
+
+---
+
+### ✅ Final Answers:
+
+**(c) Capacitor charges at new equilibrium:**
+
+* $Q_1 = Q_2 = Q_3 = \boxed{137.2\, \mu\text{C}}$
+
+**(d) Stored energy:**
+
+* $U = \boxed{0.864\, \text{mJ}}$
+
+Let me know if you’d like the voltage across each capacitor as well!
+
+
+
 ### ✨ (a) 회로가 평형 상태에 도달했을 때, 세 축전기에 저장된 전하를 구하시오
 
 ### 1️⃣ C₂와 C₃는 병렬 연결:
