@@ -23,6 +23,25 @@ First switch S1 is opened, and then switch S2 is thrown to pole b, as shown belo
 (c) Find the charges on all three capacitors when the circuit has reached its new equilibrium.
 (d) How much potential energy is now stored in the capacitor array
 ```
+Here are the **assumptions** applied in the problem and solutions, written in English:
+
+---
+
+### ✅ **Assumptions Used**
+
+1. **All capacitors are ideal** (no internal resistance or leakage).
+2. **The battery is ideal**, supplying constant voltage without internal resistance.
+3. **There is no energy loss** during charge redistribution (e.g., no heat or radiation).
+4. **Electrostatic energy is conserved** after the battery is disconnected.
+5. **Switching is instantaneous and lossless.**
+6. **Voltage across parallel capacitors is the same.**
+7. **Charge across series-connected capacitors is the same.**
+8. **Initial capacitors are uncharged.**
+9. **The system reaches equilibrium after each switch operation.**
+
+---
+
+Let me know if you want these translated to Korean as well.
 
 ---
 
