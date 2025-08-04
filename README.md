@@ -1,12 +1,3 @@
-GitHub markdown does not support LaTeX-style math (`$$...$$` or `\(...\)`) directly. To ensure your equations render properly on GitHub, you need to:
-
-* **Replace all LaTeX with inline math using Unicode or plain text.**
-* **Use code formatting or descriptive math notation**.
-
-Here’s the **GitHub-compatible version** of your explanation with **all equations rewritten in readable plain-text form**:
-
----
-
 ### ✅ Problem 1 (Original Configuration)
 
 **Three uncharged capacitors** and an **ideal battery** are connected as shown.
