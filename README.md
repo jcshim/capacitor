@@ -196,4 +196,56 @@ $$
 
 ---
 
-필요하시면 한국어 해석도 함께 제공해 드릴 수 있어요!
+Here are the **physics laws** applied in solving the capacitor problem, written in English:
+
+---
+
+### ✅ **Physics Laws Applied**
+
+1. **Kirchhoff’s Voltage Law (KVL)**
+   The sum of voltages around any closed loop is zero.
+   → Used to relate voltages across capacitors in series and loops.
+
+2. **Conservation of Energy**
+   The total electrostatic energy in the system is conserved (after battery is disconnected).
+   → Used to calculate new voltage and charge after switch changes.
+
+3. **Capacitor Charge-Voltage Relation**
+
+   $$
+   Q = C \cdot V
+   $$
+
+   → Fundamental definition of how capacitors store charge.
+
+4. **Equivalent Capacitance Rules**
+
+   * **Series**:
+
+     $$
+     \frac{1}{C_{\text{eq}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots
+     $$
+   * **Parallel**:
+
+     $$
+     C_{\text{eq}} = C_1 + C_2 + \cdots
+     $$
+
+   → Used to simplify the circuit.
+
+5. **Charge Conservation in Series**
+   In a series circuit, all capacitors share the **same charge**.
+
+6. **Voltage Equality in Parallel**
+   In a parallel connection, all capacitors share the **same voltage**.
+
+7. **Work-Energy Theorem (for electric potential energy)**
+
+   $$
+   U = \frac{1}{2} C V^2
+   $$
+
+   → Used to compute stored energy in capacitors.
+
+---
+
