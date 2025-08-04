@@ -23,7 +23,6 @@ First switch S1 is opened, and then switch S2 is thrown to pole b, as shown belo
 (c) Find the charges on all three capacitors when the circuit has reached its new equilibrium.
 (d) How much potential energy is now stored in the capacitor array
 ```
-물론입니다! 초보자도 쉽게 이해할 수 있도록 **(a) \~ (d)** 각 문항의 영어 해답을 간단하고 명확하게 다시 정리해드릴게요.
 
 ---
 
