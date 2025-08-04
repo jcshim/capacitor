@@ -1,12 +1,17 @@
-Here is your full explanation and solution rewritten clearly in **English**:
+GitHub markdown does not support LaTeX-style math (`$$...$$` or `\(...\)`) directly. To ensure your equations render properly on GitHub, you need to:
+
+* **Replace all LaTeX with inline math using Unicode or plain text.**
+* **Use code formatting or descriptive math notation**.
+
+Here’s the **GitHub-compatible version** of your explanation with **all equations rewritten in readable plain-text form**:
 
 ---
 
-### ✅ **Problem 1 (Original Configuration)**
+### ✅ Problem 1 (Original Configuration)
 
 **Three uncharged capacitors** and an **ideal battery** are connected as shown.
 
-* **Battery voltage**: ΔV<sub>B</sub> = 24 V
+* **Battery voltage**: ΔV\_B = 24 V
 * **Capacitors**:
   C₁ = 6.0 μF
   C₂ = 2.0 μF
@@ -18,111 +23,95 @@ Here is your full explanation and solution rewritten clearly in **English**:
 * Configuration:
 
   * C₂ and C₃ are in **parallel**
-  * Their combination (C₂||C₃) is in **series** with C₁
+  * Their combination (C₂ || C₃) is in **series** with C₁
   * C₁ is connected to the **+ terminal** of the battery
-  * C₂||C₃ is connected to the **− terminal**
+  * C₂ || C₃ is connected to the **− terminal**
 
 ---
 
-### (a) **Find the charge on each capacitor in equilibrium (with S1 closed, S2 at a)**
+### (a) Find the charge on each capacitor (with S1 closed, S2 at a)
 
 1. **C₂ and C₃ in parallel**:
+   C₂₃ = C₂ + C₃ = 2.0 μF + 4.0 μF = **6.0 μF**
 
-   $$
-   C_{23} = C_2 + C_3 = 2.0 + 4.0 = 6.0\,\mu\text{F}
-   $$
-2. **Series combination** with C₁:
+2. **Series with C₁**:
+   1 / C\_eq = 1 / C₁ + 1 / C₂₃
+   → 1 / C\_eq = 1/6.0 + 1/6.0 = 1/3.0
+   → C\_eq = **3.0 μF**
 
-   $$
-   C_{\text{eq}} = \left( \frac{1}{C_1} + \frac{1}{C_{23}} \right)^{-1} = \left( \frac{1}{6.0} + \frac{1}{6.0} \right)^{-1} = 3.0\,\mu\text{F}
-   $$
-3. **Total charge**:
+3. **Total charge from battery**:
+   Q\_total = C\_eq × V = 3.0 μF × 24 V = **72 μC**
 
-   $$
-   Q = C_{\text{eq}} \cdot V = 3.0 \cdot 24 = \boxed{72\,\mu\text{C}}
-   $$
-4. **C₁ (in series)** gets the full charge:
+4. **C₁ (in series) gets the full charge**:
+   Q₁ = **72 μC**
 
-   $$
-   Q_1 = \boxed{72\,\mu\text{C}}
-   $$
-5. **C₂ and C₃ (parallel)** share 72 μC with same voltage (12 V):
-
-   $$
-   Q_2 = C_2 \cdot 12 = \boxed{24\,\mu\text{C}},\quad Q_3 = C_3 \cdot 12 = \boxed{48\,\mu\text{C}}
-   $$
+5. **C₂ and C₃ (parallel) share 12 V**:
+   Q₂ = C₂ × 12 V = 2.0 × 12 = **24 μC**
+   Q₃ = C₃ × 12 V = 4.0 × 12 = **48 μC**
 
 ---
 
-### (b) **How much work does the battery do? How much energy is stored?**
+### (b) Battery work and stored energy
 
-* **Work done by battery**:
+* **Work by battery**:
+  W = Q\_total × V = 72 μC × 24 V = **1728 μJ**
 
-  $$
-  W = Q \cdot V = 72 \cdot 24 = \boxed{1728\,\mu\text{J}}
-  $$
 * **Stored energy in capacitors**:
+  U = 0.5 × C\_eq × V² = 0.5 × 3.0 × 576 = **864 μJ**
 
-  $$
-  U = \frac{1}{2} C_{\text{eq}} V^2 = \frac{1}{2} \cdot 3.0 \cdot 24^2 = \boxed{864\,\mu\text{J}}
-  $$
-
-> ⚠️ Note: Half the energy is **lost** (e.g., as heat) during the charging process. This is expected in capacitor charging.
+> ⚠️ Half of the work is not stored — it is dissipated (e.g., as heat).
 
 ---
 
-### ⚙️ **Modified Configuration**
+### ⚙️ Modified Configuration (S1 open, S2 switched to b)
 
-After reaching initial equilibrium:
+After initial charging:
 
-* **Switch S1 is opened** → Battery is disconnected
-* **Switch S2 is flipped to position b**
-* Now: C₁, C₂, C₃ form a **closed loop with no battery**
-
----
-
-### (c) **Find the charges on all capacitors in new equilibrium (battery disconnected)**
-
-Now the capacitors are **connected in series loop**, forming a closed circuit.
-
-In a series circuit:
-
-* **Charge on all capacitors must be equal**:
-
-  $$
-  Q_1 = Q_2 = Q_3 = \boxed{48\,\mu\text{C}}
-  $$
+* S1 is **opened** → Battery is **disconnected**
+* S2 is thrown to **b**
+* Now C₁, C₂, and C₃ form a **closed loop**
+* No external voltage source; charge redistributes internally
 
 ---
 
-### (d) **How much potential energy is now stored in the capacitor array?**
+### (c) Charges on capacitors in new equilibrium
 
-Stored energy:
+Capacitors are now in **series**, and in a series:
 
-$$
-U = \frac{1}{2} \left( \frac{Q^2}{C_1} + \frac{Q^2}{C_2} + \frac{Q^2}{C_3} \right)
-= \frac{1}{2} \left( \frac{48^2}{6} + \frac{48^2}{2} + \frac{48^2}{4} \right)
-= \frac{1}{2} (384 + 1152 + 576)
-= \boxed{1056\,\mu\text{J}}
-$$
+* **All capacitors share the same charge**
+  → Q₁ = Q₂ = Q₃ = **48 μC**
+
+---
+
+### (d) Energy stored in the capacitor array
+
+Total stored energy is:
+
+```
+U = 0.5 × (Q² / C₁ + Q² / C₂ + Q² / C₃)
+  = 0.5 × (48² / 6.0 + 48² / 2.0 + 48² / 4.0)
+  = 0.5 × (384 + 1152 + 576)
+  = 0.5 × 2112 = **1056 μJ**
+```
 
 ---
 
 ### 📊 Final Summary
 
-| Part | Description                           | Answer                             |
-| ---- | ------------------------------------- | ---------------------------------- |
-| (a)  | Charges in initial battery circuit    | Q₁ = 72 μC, Q₂ = 24 μC, Q₃ = 48 μC |
-| (b)  | Battery work & stored energy          | Work = 1728 μJ, Stored = 864 μJ    |
-| (c)  | Charges in isolated loop (no battery) | Q₁ = Q₂ = Q₃ = 48 μC               |
-| (d)  | Stored energy in isolated loop        | 1056 μJ                            |
+| Part | Description                        | Answer                             |
+| ---- | ---------------------------------- | ---------------------------------- |
+| (a)  | Initial charges                    | Q₁ = 72 μC, Q₂ = 24 μC, Q₃ = 48 μC |
+| (b)  | Battery work and stored energy     | Work = 1728 μJ, Stored = 864 μJ    |
+| (c)  | Charges after battery disconnected | Q₁ = Q₂ = Q₃ = 48 μC               |
+| (d)  | Stored energy in closed loop       | 1056 μJ                            |
 
 ---
 
 ### ❓ Key Insights
 
-* In a **series** connection, **charge is always equal** across all capacitors — regardless of different capacitances.
-* Capacitors can be safely connected in loop even if their original polarities were different — charges redistribute naturally.
-* **Total charge is conserved**, but **energy is not** — some energy is always lost (usually as heat) when charge redistributes without a source.
+* In a **series circuit**, charge (Q) is always **equal** across all capacitors.
+* Even if capacitors had different polarities originally, connecting them in a loop is valid — charges redistribute naturally.
+* **Charge is conserved**, but **energy is not**. Some energy is lost during redistribution.
 
-Let me know if you'd like a circuit diagram or animation to go with this!
+---
+
