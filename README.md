@@ -1,4 +1,4 @@
-'''
+```
 Problem 1- Three uncharged capacitors and an ideal battery are combined to
 form the circuit shown to the right. Switch S1 is a simple open/closed switch,
 while switch S2 can be toggled between poles a and b. The values for the
@@ -22,4 +22,4 @@ First switch S1 is opened, and then switch S2 is thrown to pole b, as shown belo
 
 (c) Find the charges on all three capacitors when the circuit has reached its new equilibrium.
 (d) How much potential energy is now stored in the capacitor array
-'''
+```
